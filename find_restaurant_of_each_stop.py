@@ -1,4 +1,4 @@
-import find_my_neibourhood
+import find_my_neighbourhood
 import find_closest_restaurant_in_neighbourhood
 def find_closest_restaurant(x, y):
     x = float(x)
@@ -78,4 +78,9 @@ def find_closest_restaurant_on_path(list5):
         Ronpa.append(A)
     print(Ronpa)
 
+
+if __name__ == "__main__":
+   for i in range(100):
+        for j in range(100):
+            print(find_closest_restaurant_on_path([[i,j],[(i+j)%10, abs(i-j)]]))
 #没运行不知道好不好用，自己感觉没有问题喵……
